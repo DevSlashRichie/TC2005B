@@ -14,3 +14,4 @@ Este repositorio contiene las actividades y laboratorios para la materia TC2005B
 - Matrícula: A01710266
 - Correo: [A01710266@tec.mx](mailto:A01710266@tec.mx)
 - Carrera: Ingeniería en Tecnologías Computacionales
+
