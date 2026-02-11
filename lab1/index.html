@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trabajos de Ricardo Rodriguez Medina">
+    <meta name="author" content="Ricardo Rodriguez Medina">
+    <title>Ricardo Rodriguez Medina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="top">
+    <a href="#top" class="scroll-top">
+        ↑
+    </a>
+
+    <header class="text-center">
+        <div>
+            <h1>Ricardo Rodriguez Medina</h1>
+            <p>Estudiante de Ingeniería en Tecnologías Computacionales</p>
+            <p><strong>Matrícula:</strong> A01710266 | <strong>Correo:</strong> <a
+                    href="mailto:A01710266@tec.mx">A01710266@tec.mx</a></p>
+        </div>
+    </header>
+
+    <nav>
+        <h2 class="text-center">Menú de navegación</h2>
+        <ul>
+            <li><a href="#proyectos">Mis Proyectos</a></li>
+            <li><a href="#aficiones">Aficiones</a></li>
+            <li><a href="#preguntas">Preguntas y Respuestas</a></li>
+            <li><a href="#contacto">Formulario de Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="proyectos">
+            <header>
+                <h2>Mis Principales Proyectos</h2>
+            </header>
+
+            <article class="card">
+                <header>
+                    <h3>Joger</h3>
+                </header>
+                <p>Plataforma <strong>integral de administración de pádel</strong> que permite gestionar reservas de
+                    canchas, torneos, pagos y estadísticas de jugadores en tiempo real.</p>
+                <footer>
+                    <p><em>Tecnologías:</em> React, Rust, PostgreSQL</p>
+                </footer>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>Battleclass</h3>
+                </header>
+                <p>Sistema de <strong>aprendizaje gamificado para Junior High School</strong> basado en mecánicas de
+                    RPG.</p>
+                <footer>
+                    <p><em>Tecnologías:</em> React, Rust, PostgreSQL</p>
+                </footer>
+            </article>
+
+            <article class="card">
+                <header>
+                    <h3>MyMetaverse</h3>
+                </header>
+                <p>Plataforma <strong>Play-to-Earn (P2E)</strong> que integra economía digital con experiencias de
+                    gaming.</p>
+                <footer>
+                    <p><em>Tecnologías:</em> React, Rust, PostgreSQL</p>
+                </footer>
+            </article>
+        </section>
+
+        <section id="aficiones">
+            <h2>Mis Aficiones</h2>
+            <ul>
+                <li><strong>Pádel:</strong> Un deporte fácil que me gusta practicar.</li>
+                <li><strong>Blockchain y Web3:</strong> Explorando las posibilidades de la tecnología descentralizada
+                </li>
+                <li><strong>Coding:</strong> Siempre he mostrado gran interés por el desarrollo de software y las
+                    implicaciones tecnologicas.</li>
+            </ul>
+        </section>
+
+        <section id="preguntas">
+            <h2>Preguntas y Respuestas sobre Tecnologías Web</h2>
+
+            <article class="card">
+                <h3>¿Cómo se puede aplicar CSS a un documento HTML?</h3>
+                <p>Existen tres formas principales de aplicar CSS:</p>
+                <ol>
+                    <li><strong>CSS Externo:</strong> Mediante un archivo separado .css enlazado con la etiqueta
+                        <code>&lt;link&gt;</code> en el head. Es la mejor práctica para mantenibilidad.
+                    </li>
+                    <li><strong>CSS Interno:</strong> Utilizando la etiqueta <code>&lt;style&gt;</code> dentro del head
+                        del documento HTML.</li>
+                    <li><strong>Estilos en línea (Inline):</strong> Mediante el atributo <code>style</code> directamente
+                        en las etiquetas HTML. No se recomienda para proyectos grandes.</li>
+                </ol>
+            </article>
+
+            <article class="card">
+                <h3>¿Qué es un selector CSS?</h3>
+                <p>Un selector es un patrón de elementos que le indica al navegador qué elementos HTML deben ser
+                    seleccionados para aplicarles las reglas de estilo (declaraciones) definidas dentro de las llaves.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>¿Cuál es la diferencia entre un ID y una Clase?</h3>
+                <p>La principal diferencia radica en la unicidad y reutilización:</p>
+                <ul>
+                    <li><strong>ID (<code>#id</code>):</strong> Debe ser único en todo el documento. Se usa para
+                        identificar un solo elemento específico.</li>
+                    <li><strong>Clase (<code>.clase</code>):</strong> Puede aplicarse a múltiples elementos en el mismo
+                        documento. Se usa para aplicar estilos comunes a varios elementos.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>¿Qué es la especificidad en CSS?</h3>
+                <p>Es el conjunto de reglas que utiliza el navegador para decidir qué declaración de estilo se aplica a
+                    un elemento cuando hay múltiples reglas que compiten. Se calcula basándose en el tipo de selectores
+                    (ID tiene más peso que Clase, y Clase más que Elemento).</p>
+            </article>
+
+            <article class="card">
+                <h3>¿Qué es el "Box Model" o Modelo de Caja?</h3>
+                <p>Es la base del diseño web en CSS. Cada elemento se representa como una caja rectangular que consta de
+                    cuatro partes:</p>
+                <ul>
+                    <li><strong>Content:</strong> El contenido real (texto, imágenes).</li>
+                    <li><strong>Padding:</strong> El espacio entre el contenido y el borde.</li>
+                    <li><strong>Border:</strong> La línea que rodea el padding y el contenido.</li>
+                    <li><strong>Margin:</strong> El espacio exterior al borde que separa al elemento de otros.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>¿Cuál es la diferencia entre Internet y la World Wide Web?</h3>
+                <p>Según <cite>GeeksforGeeks</cite>: "El <strong>Internet</strong> es una red global de redes
+                    interconectadas que permite que dispositivos de todo el mundo se comuniquen. Está compuesto por
+                    hardware (routers, cables, satélites, servidores y computadoras), protocolos (TCP/IP) y servicios
+                    (correo electrónico, FTP, VoIP)."</p>
+                <p>Mientras que "la <strong>World Wide Web (WWW)</strong> es un sistema de páginas web y sitios web
+                    conectados a través de hipervínculos y accesibles mediante Internet. Fue inventada en 1989 por Tim
+                    Berners-Lee en el CERN."</p>
+                <p>La diferencia fundamental es que <em>Internet es la infraestructura</em> (las carreteras), mientras
+                    que <em>la Web es un servicio</em> que corre sobre esa infraestructura (el tráfico que circula por
+                    las carreteras).</p>
+            </article>
+
+            <article class="card">
+                <h3>¿Cuáles son las partes de un URL?</h3>
+                <p>Una URL (Uniform Resource Locator) está compuesta por las siguientes partes:</p>
+                <ol>
+                    <li><strong>Protocolo:</strong> Indica el método de acceso (http, https, ftp, etc.)</li>
+                    <li><strong>Subdominio:</strong> Parte opcional que precede al dominio principal (www, blog, etc.)
+                    </li>
+                    <li><strong>Dominio:</strong> Nombre del servidor donde se aloja el recurso</li>
+                    <li><strong>Puerto:</strong> Número de puerto opcional (:80 para HTTP, :443 para HTTPS)</li>
+                    <li><strong>Ruta:</strong> Ubicación específica del recurso en el servidor</li>
+                    <li><strong>Parámetros de consulta:</strong> Datos adicionales que comienzan con ?</li>
+                    <li><strong>Fragmento:</strong> Identificador de sección específica precedido por #</li>
+                </ol>
+                <p>Ejemplo: <code>https://www.ejemplo.com:8080/ruta/pagina?id=123#seccion</code></p>
+            </article>
+
+            <article class="card">
+                <h3>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h3>
+                <p>Según la documentación de <cite>MDN Web Docs</cite>, los métodos HTTP son verbos que indican el
+                    propósito de la solicitud:</p>
+                <dl>
+                    <dt><strong>GET</strong></dt>
+                    <dd>Solicita una representación del recurso especificado. Las solicitudes GET solo deben recuperar
+                        datos y no deben contener contenido en el cuerpo de la solicitud. Es <em>seguro, idempotente y
+                            cacheable</em>.</dd>
+
+                    <dt><strong>HEAD</strong></dt>
+                    <dd>Solicita una respuesta idéntica a GET pero sin el cuerpo de respuesta. Útil para obtener
+                        metadatos sin transferir todo el contenido.</dd>
+
+                    <dt><strong>POST</strong></dt>
+                    <dd>Envía una entidad al recurso especificado, causando un cambio de estado o efectos secundarios en
+                        el servidor. Se usa para crear recursos nuevos.</dd>
+
+                    <dt><strong>PUT</strong></dt>
+                    <dd>Reemplaza todas las representaciones actuales del recurso de destino con el contenido de la
+                        solicitud. Es <em>idempotente</em>.</dd>
+
+                    <dt><strong>PATCH</strong></dt>
+                    <dd>Aplica modificaciones parciales a un recurso. A diferencia de PUT que reemplaza todo el recurso,
+                        PATCH solo actualiza los campos especificados.</dd>
+
+                    <dt><strong>DELETE</strong></dt>
+                    <dd>Elimina el recurso especificado. Es <em>idempotente</em>.</dd>
+                </dl>
+            </article>
+
+            <article class="card">
+                <h3>¿Qué método HTTP se debe utilizar al enviar un formulario HTML con usuario y contraseña? ¿Por qué?
+                </h3>
+                <p>Se debe utilizar el método <strong>POST</strong>.</p>
+                <p>Según <cite>MDN Web Docs</cite>: "El método POST envía una entidad al recurso especificado, a menudo
+                    causando un cambio de estado o efectos secundarios en el servidor."</p>
+                <p>Las razones son:</p>
+                <ul>
+                    <li>Los datos se envían en el <strong>cuerpo de la solicitud</strong>, no en la URL, lo que
+                        proporciona mayor seguridad</li>
+                    <li>Los datos sensibles (contraseñas) no quedan visibles en el historial del navegador ni en los
+                        logs del servidor</li>
+                    <li>POST está diseñado para operaciones que <em>modifican el estado</em> del servidor (como
+                        autenticar un usuario)</li>
+                    <li>Los datos tienen mayor capacidad de almacenamiento que en GET</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>¿Qué método HTTP se utiliza cuando se accede a una página a través de un URL?</h3>
+                <p>Se utiliza el método <strong>GET</strong>.</p>
+                <p>Según <cite>MDN Web Docs</cite>: "El método GET solicita una representación del recurso especificado.
+                    Las solicitudes usando GET solo deben recuperar datos."</p>
+                <p>Cuando escribes una URL en el navegador o haces clic en un enlace, el navegador envía automáticamente
+                    una solicitud GET para obtener el contenido de esa página.</p>
+            </article>
+
+            <article class="card">
+                <h3>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún
+                    error?</h3>
+                <p>El código <strong>200 OK</strong> significa que <em>la solicitud tuvo éxito</em>. No ocurrió ningún
+                    error.</p>
+            </article>
+
+            <article class="card">
+                <h3>¿Es responsabilidad del desarrollador corregir un error 404? ¿Por qué?</h3>
+                <p><strong>Sí</strong>, es responsabilidad del desarrollador o administrador del sitio web.</p>
+                <p>Según <cite>MDN Web Docs</cite>: "El código 404 Not Found significa que el servidor no puede
+                    encontrar el recurso solicitado. En el navegador, esto significa que la URL no es reconocida."</p>
+                <p>El error 404 ocurre (algunos ejemplos) cuando:</p>
+                <ul>
+                    <li>Una página ha sido eliminada o movida</li>
+                    <li>La URL está mal escrita</li>
+                </ul>
+                <p>El desarrollador debe corregirlo porque puede deberse a enlaces rotos internos, páginas eliminadas
+                    sin redirección adecuada, o problemas en la estructura del sitio que afectan la experiencia del
+                    usuario y el SEO.</p>
+            </article>
+
+            <article class="card">
+                <h3>¿Es responsabilidad del desarrollador corregir un error 500? ¿Por qué?</h3>
+                <p><strong>Sí</strong>, definitivamente es responsabilidad del desarrollador.</p>
+                <p>Según <cite>MDN Web Docs</cite>: "El servidor ha encontrado una situación que no sabe cómo manejar.
+                    Este error es genérico, indicando que el servidor no puede encontrar un código de estado 5XX más
+                    apropiado para responder."</p>
+                <p>El error 500 (Internal Server Error) indica un problema en el lado del servidor como:</p>
+                <ul>
+                    <li>Errores en el código de la aplicación</li>
+                    <li>Problemas de configuración del servidor</li>
+                    <li>Errores en la base de datos</li>
+                    <li>Fallos en scripts del lado del servidor</li>
+                </ul>
+                <p>El desarrollador debe identificar y corregir la causa raíz, ya que este error indica un fallo en la
+                    lógica del servidor.</p>
+            </article>
+
+            <article class="card">
+                <h3>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado? Menciona elementos HTML 4
+                    desaprobados en HTML5</h3>
+                <p>Un elemento o atributo <strong>deprecated (desaprobado)</strong> significa que aunque todavía
+                    funciona, <em>ya no se recomienda su uso</em> porque puede ser eliminado en versiones futuras o hay
+                    alternativas mejores disponibles.</p>
+                <p>Según <cite>MDN Web Docs</cite>, elementos de HTML 4 que están desaprobados en HTML5 incluyen:</p>
+                <ul>
+                    <li><code>&lt;center&gt;</code> - Usar CSS text-align: center</li>
+                    <li><code>&lt;font&gt;</code> - Usar CSS font-family, font-size, color</li>
+                    <li><code>&lt;b&gt;</code> - Usar <code>&lt;strong&gt;</code> para importancia semántica</li>
+                    <li><code>&lt;i&gt;</code> - Usar <code>&lt;em&gt;</code> para énfasis semántico</li>
+                    <li><code>&lt;strike&gt;</code> o <code>&lt;s&gt;</code> - Usar CSS text-decoration: line-through
+                    </li>
+                    <li><code>&lt;u&gt;</code> - Usar CSS text-decoration: underline</li>
+                    <li><code>&lt;frameset&gt;</code> y <code>&lt;frame&gt;</code> - Reemplazados por iframes</li>
+                    <li><code>&lt;big&gt;</code>, <code>&lt;tt&gt;</code>, <code>&lt;marquee&gt;</code>,
+                        <code>&lt;blink&gt;</code>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</h3>
+                <table>
+                    <caption>Comparación entre HTML 4 y HTML5</caption>
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>HTML 4</th>
+                            <th>HTML5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Doctype</strong></td>
+                            <td>Complejo y largo</td>
+                            <td>Simplificado: &lt;!DOCTYPE html&gt;</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Elementos semánticos</strong></td>
+                            <td>No existen (usaba div con clases)</td>
+                            <td>Nuevos: header, nav, article, section, aside, footer, main</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Multimedia</strong></td>
+                            <td>Requiere plugins (Flash)</td>
+                            <td>Elementos nativos audio y video</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gráficos</strong></td>
+                            <td>No soportado nativamente</td>
+                            <td>Elemento canvas para gráficos 2D/3D</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Formularios</strong></td>
+                            <td>Tipos básicos de input</td>
+                            <td>Nuevos tipos (ejemplos): email, url, number, date, range, etc.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Almacenamiento local</strong></td>
+                            <td>No disponible</td>
+                            <td>localStorage y sessionStorage</td>
+                        </tr>
+                        <tr>
+                            <td><strong>APIs JavaScript</strong></td>
+                            <td>Límitadas</td>
+                            <td>Geolocation, Web Workers, WebSockets, etc.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Validación</strong></td>
+                            <td>DTD externo requerido</td>
+                            <td>Sintaxis más flexible y validación simplificada</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article class="card">
+                <h3>¿Qué componentes de estructura y estilo tiene una tabla?</h3>
+                <p>Según <cite>MDN Web Docs</cite>, una tabla HTML tiene los siguientes componentes de estructura:</p>
+                <ul>
+                    <li><strong>&lt;table&gt;</strong> - Contenedor principal de la tabla</li>
+                    <li><strong>&lt;caption&gt;</strong> - Título o leyenda de la tabla</li>
+                    <li><strong>&lt;thead&gt;</strong> - Agrupa las filas del encabezado</li>
+                    <li><strong>&lt;tbody&gt;</strong> - Agrupa las filas del cuerpo de datos</li>
+                    <li><strong>&lt;tfoot&gt;</strong> - Agrupa las filas del pie de tabla</li>
+                    <li><strong>&lt;tr&gt;</strong> - Define una fila de celdas</li>
+                    <li><strong>&lt;th&gt;</strong> - Celda de encabezado (header cell)</li>
+                    <li><strong>&lt;td&gt;</strong> - Celda de datos estándar (data cell)</li>
+                    <li><strong>&lt;colgroup&gt;</strong> - Define un grupo de columnas</li>
+                    <li><strong>&lt;col&gt;</strong> - Define atributos para una o más columnas</li>
+                </ul>
+                <p>Atributos de estilo (en HTML5 se recomienda usar CSS):</p>
+                <ul>
+                    <li><code>border</code> - Define el borde de la tabla y celdas</li>
+                    <li><code>colspan</code> - Celda que abarca múltiples columnas</li>
+                    <li><code>rowspan</code> - Celda que abarca múltiples filas</li>
+                    <li><code>scope</code> - Define si un encabezado aplica a fila, columna o grupo</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>¿Cuáles son los principales controles de una forma HTML5?</h3>
+                <p>Según <cite>MDN Web Docs</cite>, HTML5 introduce numerosos tipos de controles para formularios:</p>
+
+                <h4>Controles básicos de texto:</h4>
+                <ul>
+                    <li><strong>text</strong> - Texto de una línea</li>
+                    <li><strong>password</strong> - Texto oculto (contraseñas)</li>
+                    <li><strong>textarea</strong> - Texto multilínea</li>
+                    <li><strong>email</strong> - Dirección de correo con validación</li>
+                    <li><strong>url</strong> - URL con validación</li>
+                    <li><strong>tel</strong> - Número telefónico</li>
+                    <li><strong>search</strong> - Campo de búsqueda</li>
+                </ul>
+
+                <h4>Controles numéricos:</h4>
+                <ul>
+                    <li><strong>number</strong> - Valor numérico</li>
+                    <li><strong>range</strong> - Control deslizante (slider)</li>
+                </ul>
+
+                <h4>Controles de fecha y tiempo:</h4>
+                <ul>
+                    <li><strong>date</strong> - Selector de fecha</li>
+                    <li><strong>time</strong> - Selector de hora</li>
+                    <li><strong>datetime-local</strong> - Fecha y hora local</li>
+                    <li><strong>month</strong> - Mes y año</li>
+                    <li><strong>week</strong> - Semana del año</li>
+                </ul>
+
+                <h4>Controles de selección:</h4>
+                <ul>
+                    <li><strong>checkbox</strong> - Casilla de verificación</li>
+                    <li><strong>radio</strong> - Botón de opción única</li>
+                    <li><strong>select</strong> - Lista desplegable</li>
+                    <li><strong>datalist</strong> - Lista de sugerencias autocompletado</li>
+                    <li><strong>color</strong> - Selector de color</li>
+                    <li><strong>file</strong> - Selector de archivos</li>
+                </ul>
+
+                <h4>Controles de botones:</h4>
+                <ul>
+                    <li><strong>button</strong> - Botón genérico</li>
+                    <li><strong>submit</strong> - Enviar formulario</li>
+                    <li><strong>reset</strong> - Restablecer formulario</li>
+                    <li><strong>image</strong> - Botón con imagen</li>
+                </ul>
+
+                <h4>Controles especiales HTML5:</h4>
+                <ul>
+                    <li><strong>progress</strong> - Barra de progreso</li>
+                    <li><strong>meter</strong> - Medidor escalar</li>
+                    <li><strong>output</strong> - Resultado de cálculos</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</h3>
+                <p>Según link: <a href="https://html5test.com" target="_blank">html5test.com</a> mi navegador tiene:
+                    526/555 points.</p>
+            </article>
+
+            <article class="card">
+                <h3>¿Cuál es el ciclo de vida de los sistemas de información?</h3>
+                <p>El ciclo de vida de los sistemas de información (SI) comprende las etapas por las que pasa un sistema
+                    desde su concepción hasta su retiro:</p>
+                <ol>
+                    <li><strong>Planificación:</strong> Identificación de necesidades y viabilidad del proyecto</li>
+                    <li><strong>Análisis:</strong> Estudio detallado de requisitos y procesos actuales</li>
+                    <li><strong>Diseño:</strong> Arquitectura del sistema, interfaces y bases de datos</li>
+                    <li><strong>Desarrollo/Implementación:</strong> Codificación y construcción del sistema</li>
+                    <li><strong>Pruebas:</strong> Verificación de funcionamiento correcto</li>
+                    <li><strong>Instalación/Despliegue:</strong> Puesta en producción del sistema</li>
+                    <li><strong>Uso y mantenimiento:</strong> Operación continua y corrección de errores</li>
+                    <li><strong>Retiro:</strong> Sustitución o eliminación del sistema</li>
+                </ol>
+            </article>
+
+            <article class="card">
+                <h3>¿Cuál es el ciclo de desarrollo de sistemas de información?</h3>
+                <p>El ciclo de desarrollo de sistemas (SDLC: Systems Development Life Cycle) es un proceso estructurado
+                    para crear sistemas de información:</p>
+
+                <h4>Metodologías tradicionales:</h4>
+                <ul>
+                    <li><strong>Cascada (Waterfall):</strong> Etapas secuenciales sin retroceso</li>
+                    <li><strong>Espiral:</strong> Desarrollo iterativo con análisis de riesgos</li>
+                    <li><strong>Prototipos:</strong> Creación rápida de versiones preliminares</li>
+                </ul>
+
+                <h4>Metodologías ágiles modernas:</h4>
+                <ul>
+                    <li><strong>Scrum:</strong> Sprints iterativos de 2-4 semanas</li>
+                    <li><strong>Kanban:</strong> Flujo continuo de trabajo visualizado</li>
+                    <li><strong>XP (Extreme Programming):</strong> Énfasis en prácticas técnicas</li>
+                </ul>
+
+                <p>Las fases comunes incluyen las que ya mencionamos.</p>
+            </article>
+
+
+            <article class="card">
+                <h3>Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?</h3>
+                <p>No se deberia usar ya que denota algo que se está haciendo de manera incorrecta.</p>
+            </article>
+
+            <article class="card">
+                <h3>Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</h3>
+                <p>Porque la resolución podría no ser la correcta y mostrarse de una manera fea.</p>
+            </article>
+
+
+            <article class="card">
+                <h3>Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de
+                    estilo entre %, px y pt?</h3>
+                <p>Cada uno es para un problema distinto. PX es muy exacto. % Cuando es un elemento hijo. pt es como una
+                    medida de impresion casi no se deberia usar porque es un medio digital. Existen otros muy similares
+                    que dependen de una configuración inicial.</p>
+            </article>
+
+            <article class="card">
+                <h3>¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</h3>
+                <p>Porque el archivo es mucho más pequeño y conciso por lo que es más fácil deprocesar y descargar.</p>
+            </article>
+
+            <article class="card">
+                <h3>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h3>
+                <p>Todas. Son completamente distintos solo el nombre. Porque uno es más orientado al backend y el otro
+                    al frontend y corre en el navegador.</p>
+            </article>
+
+            <article class="card">
+                <h3>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</h3>
+
+                <p>
+                    Algunos métodos del objeto <strong>Date</strong> son:
+                </p>
+
+                <ul>
+                    <li><code>getMonth()</code> – Obtiene el mes.</li>
+                    <li><code>getFullYear()</code> – Obtiene el año.</li>
+                    <li><code>getHours()</code> – Obtiene la hora.</li>
+                    <li><code>toISOString()</code> – Convierte la fecha a formato ISO.</li>
+                    <li><code>getTime()</code> – Devuelve los milisegundos.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</h3>
+
+                <ul>
+                    <li><code>map()</code> – Transforma cada elemento.</li>
+                    <li><code>filter()</code> – Filtra elementos.</li>
+                    <li><code>push()</code> – Agrega al final.</li>
+                    <li><code>pop()</code> – Elimina el último.</li>
+                    <li><code>includes()</code> – Verifica si existe un valor.</li>
+                </ul>
+            </article>
+
+
+            <article class="card">
+                <h3>¿Cómo se declara una variable con alcance local dentro de una función?</h3>
+
+                <p>
+                    <code>let</code> y <code>const</code>.
+                    let hace la variable inmutable y const constante
+                </p>
+            </article>
+
+
+            <article class="card">
+                <h3>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h3>
+
+                <p>
+                    Puede causar efectos secundarios hace dificil el seguimiento del código y puede ser complicado
+                    reutilizar código.
+                </p>
+            </article>
+
+        </section>
+
+        <section id="referencias">
+            <h2>Referencias y Fuentes</h2>
+            <p>Esta página fue desarrollada utilizando las siguientes fuentes autorizadas:</p>
+            <ul>
+                <li><cite>MDN Web Docs</cite> - Documentación de métodos HTTP: <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods"
+                        target="_blank">developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods</a></li>
+                <li><cite>MDN Web Docs</cite> - Códigos de estado HTTP: <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status"
+                        target="_blank">developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status</a></li>
+                <li><cite>MDN Web Docs</cite> - Elementos HTML: <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements"
+                        target="_blank">developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements</a></li>
+                <li><cite>GeeksforGeeks</cite> - Diferencia entre Internet y WWW: <a
+                        href="https://www.geeksforGeeks.org/computer-networks/difference-between-internet-and-www/"
+                        target="_blank">geeksforgeeks.org/computer-networks/difference-between-internet-and-www/</a>
+                </li>
+                <li><cite>W3C Validator</cite> - Validación HTML: <a href="https://validator.w3.org/"
+                        target="_blank">validator.w3.org</a></li>
+                <li><cite>HTML5 Test</cite> - Soporte de navegadores: <a href="https://html5test.com/"
+                        target="_blank">html5test.com</a></li>
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2>Datos de Contacto</h2>
+            <figure>
+                <figcaption>Información del estudiante:</figcaption>
+                <dl>
+                    <dt>Nombre:</dt>
+                    <dd>Ricardo Rodriguez Medina</dd>
+                    <dt>Matrícula:</dt>
+                    <dd>A01710266</dd>
+                    <dt>Correo:</dt>
+                    <dd><a href="mailto:A01710266@tec.mx">A01710266@tec.mx</a></dd>
+                    <dt>Institución:</dt>
+                    <dd>Tecnológico de Monterrey</dd>
+                </dl>
+            </figure>
+
+            <h3>Tecnologías utilizadas</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>NEOVIM</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="text-center">
+        <p><small>&copy; 2026 Ricardo Rodriguez Medina. Todos los derechos reservados.</small></p>
+    </footer>
+</body>
+
+</html>

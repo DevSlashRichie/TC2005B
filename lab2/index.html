@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans p-8 max-w-4xl mx-auto">
+
+    <section class="mb-12 p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+        <h2 class="text-3xl font-extrabold mb-6 text-indigo-600 border-b-2 border-indigo-50 pb-3">1: Tabla de Cuadrados y Cubos</h2>
+        <div id="resultado1" class="overflow-x-auto"></div>
+        <table class="w-full border-collapse rounded-lg overflow-hidden shadow-sm">
+            <thead>
+                <tr class="bg-indigo-600 text-white">
+                    <th class="p-3 text-left">Número</th>
+                    <th class="p-3 text-left">Cuadrado</th>
+                    <th class="p-3 text-left">Cubo</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+                <script>
+                    (() => {
+                        const num = parseInt(prompt("Problema 1: Ingresa un número:"));
+
+                        if (!isNaN(num)) {
+                            for (let i = 1; i <= num; i++) {
+                                document.write(`
+                                    <tr class="hover:bg-slate-50 transition-colors">
+                                        <td class="p-3 font-medium text-slate-600">${i}</td>
+                                        <td class="p-3 text-slate-600">${i * i}</td>
+                                        <td class="p-3 text-slate-600">${i * i * i}</td>
+                                    </tr>`);
+                            }
+                        }
+                    })();
+                </script>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="mb-12 p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+        <h2 class="text-3xl font-extrabold mb-6 text-indigo-600 border-b-2 border-indigo-50 pb-3">2: Suma Aleatoria</h2>
+        <div id="resultado2" class="space-y-2"></div>
+        <script>
+            (() => {
+                const n1 = Math.floor(Math.random() * 100);
+                const n2 = Math.floor(Math.random() * 100);
+                const inicio = Date.now();
+                const respuesta = parseInt(prompt(`Problema 2: ¿Cuánto es ${n1} + ${n2}?`));
+                const fin = Date.now();
+                const tiempo = (fin - inicio) / 1000;
+                const esCorrecto = respuesta === (n1 + n2);
+                document.getElementById('resultado2').innerHTML = `
+                    <p class="text-lg">Resultado: <span class="font-bold ${esCorrecto ? "text-green-600" : "text-red-600"}">${esCorrecto ? "Correcto" : "Incorrecto"}</span></p>
+                    <p class="text-slate-500 italic">Tiempo tardado: ${tiempo} segundos</p>
+                `;
+            })();
+        </script>
+    </section>
+
+    <section class="mb-12 p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+        <h2 class="text-3xl font-extrabold mb-6 text-indigo-600 border-b-2 border-indigo-50 pb-3">3: Contador</h2>
+        <div id="resultado3" class="bg-slate-50 p-4 rounded-lg font-mono text-sm border border-slate-100 whitespace-pre"></div>
+        <script>
+            function contador(arreglo) {
+                let negativos = 0, ceros = 0, positivos = 0;
+                for (let n of arreglo) {
+                    if (n < 0) negativos++;
+                    else if (n === 0) ceros++;
+                    else positivos++;
+                }
+                return { negativos, ceros, positivos };
+            }
+
+            const arr3 = [-5, 0, 10, -2, 0, 5, 8];
+            const res3 = contador(arr3);
+            document.getElementById('resultado3').innerText = `Arreglo: [${arr3}]
+Negativos: ${res3.negativos}, Ceros: ${res3.ceros}, Positivos: ${res3.positivos}`;
+
+            console.assert(JSON.stringify(contador([-1, 0, 1])) === JSON.stringify({negativos: 1, ceros: 1, positivos: 1}));
+            console.assert(JSON.stringify(contador([0, 0, 0])) === JSON.stringify({negativos: 0, ceros: 3, positivos: 0}));
+        </script>
+    </section>
+
+    <section class="mb-12 p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+        <h2 class="text-3xl font-extrabold mb-6 text-indigo-600 border-b-2 border-indigo-50 pb-3">4: Promedios</h2>
+        <div id="resultado4" class="bg-slate-50 p-4 rounded-lg font-mono text-sm border border-slate-100 whitespace-pre"></div>
+        <script>
+            function promedios(matriz) {
+                return matriz.map(fila => fila.reduce((a, b) => a + b, 0) / fila.length);
+            }
+
+            const matriz4 = [[10, 10, 10], [5, 15], [1, 2, 3, 4]];
+            const res4 = promedios(matriz4);
+            document.getElementById('resultado4').innerText = `Matriz: ${JSON.stringify(matriz4)}
+Promedios: [${res4}]`;
+
+            console.assert(JSON.stringify(promedios([[2, 4], [10, 20]])) === JSON.stringify([3, 15]));
+        </script>
+    </section>
+
+    <section class="mb-12 p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+        <h2 class="text-3xl font-extrabold mb-6 text-indigo-600 border-b-2 border-indigo-50 pb-3">5: Inverso</h2>
+        <div id="resultado5" class="bg-slate-50 p-4 rounded-lg font-mono text-sm border border-slate-100 whitespace-pre"></div>
+        <script>
+            function inverso(num) {
+                const s = Math.abs(num).toString().split('').reverse().join('');
+                return parseInt(s) * Math.sign(num);
+            }
+
+            const num5 = 12345;
+            document.getElementById('resultado5').innerText = `Número: ${num5}
+Inverso: ${inverso(num5)}`;
+
+            console.assert(inverso(123) === 321);
+            console.assert(inverso(-456) === -654);
+            console.assert(inverso(100) === 1);
+        </script>
+    </section>
+
+    <section class="mb-12 p-8 bg-white rounded-2xl shadow-sm border border-slate-200">
+        <h2 class="text-3xl font-extrabold mb-6 text-indigo-600 border-b-2 border-indigo-50 pb-3">6: Gestión de Tareas</h2>
+        <p class="mb-4 text-slate-600 italic">Este sistema permite gestionar tareas pendientes, permitiendo marcarlas como completadas y obtener su descripción formateada.</p>
+        <div id="resultado6" class="space-y-3"></div>
+        <script>
+            class Tarea {
+
+                constructor(titulo, prioridad) {
+                    this.titulo = titulo;
+                    this.prioridad = prioridad;
+                    this.completada = false;
+                }
+
+
+                this.completar = () => {
+                    this.completada = true;
+                };
+
+                this.obtenerInfo = () => {
+                    const statusClass = this.completada ? "bg-green-100 text-green-700" : "bg-amber-100 text-amber-700";
+                    const priorityClass = this.prioridad === "Alta" ? "text-red-600 font-bold" : "text-slate-500";
+                    return `
+                        <div class="flex items-center space-x-3 p-3 rounded-lg border border-slate-100 shadow-sm">
+                            <span class="px-2 py-1 rounded text-xs font-bold uppercase ${statusClass}">
+                                ${this.completada ? "SI" : "NO"}
+                            </span>
+                            <span class="flex-grow font-medium">${this.titulo}</span>
+                            <span class="text-xs ${priorityClass}">${this.prioridad}</span>
+                        </div>`;
+                };
+            }
+
+            const t1 = new Tarea("Estudiar JS", "Alta");
+            const t2 = new Tarea("Hacer ejercicio", "Media");
+            t1.completar();
+
+            document.getElementById('resultado6').innerHTML = `
+                ${t1.obtenerInfo()}
+                ${t2.obtenerInfo()}
+            `;
+
+            const testTarea = new Tarea("Test", "Baja");
+            console.assert(testTarea.completada === false);
+            testTarea.completar();
+            console.assert(testTarea.completada === true);
+        </script>
+    </section>
+
+</body>
+</html>
